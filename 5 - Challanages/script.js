@@ -204,3 +204,37 @@ const findOccurance = function(input, letter) {
 
 const countResult = findOccurance(['word', 'talha', 'pakistan'], 'j')
 console.log(countResult)
+
+/*
+
+input : a, b, c
+a === b === c ====> equilateral
+two are equal ====> isoscelces
+none side is equal to other ====> scalen
+
+*/
+
+const typeOfTriangle = function(a, b, c) {
+  // first case
+  if (a === b && c === b) {
+    return 'Equilateral'
+  }
+  // iscoscleces
+  else if (a !== b && b !== c && c !== a) {
+    return 'Scalen'
+  }
+  // scalen
+  else {
+    return 'Isoscles'
+  }
+}
+
+console.log(typeOfTriangle(5, 5, 5))
+
+console.log(typeOfTriangle(5, 6, 5))
+
+console.log(typeOfTriangle(5, 4, 1))
+
+// if / else
+// if / else if / else if / else
+//
